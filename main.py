@@ -1,9 +1,13 @@
+from apps import open_app
+from websites import open_website
+from folders import open_folder
+from data import websites
+from data import folders
 import speech_recognition as sr
 import pyttsx3
-import os
 from datetime import datetime
 import wikipedia
-import webbrowser
+
 
 engine = pyttsx3.init()
 
@@ -17,14 +21,6 @@ for voice in voices:
 def speak(text):
     engine.say(text)
     engine.runAndWait()
-
-def open_website(name, url):
-    speak(f"Opening {name} buddy.")
-    webbrowser.open(url)
-
-def open_app(name, command):
-    speak(f"Opening {name} buddy.")
-    os.system(command)
 
 recognizer = sr.Recognizer()
 
@@ -102,15 +98,20 @@ with sr.Microphone() as source:
 
                 speak("Sorry buddy, Wikipedia is not responding right now.")
         
-        elif "open youtube" in text:
-            open_website("YouTube", "https://www.youtube.com")
-
-        elif "open google" in text:
-            open_website("Google", "https://www.google.com")
-
         elif "open rin folder" in text:
-            speak("Opening RIN folder buddy.")
-            os.startfile(r"C:\Users\Ravi\OneDrive\Desktop\RIN")
+            name, path = folders["rin folder"]
+            open_folder(name, path)
+
+        elif text.startswith("open "):
+            website = text.replace("open ", "").strip()
+
+            print("Website name:", website)
+
+            if website in websites:
+                name, url = websites[website]
+                open_website(name, url)
+            else:
+                speak("Sorry buddy, I do not know that website.")
         
         else:
             speak("Sorry buddy, I do not know that command.")
