@@ -1,8 +1,7 @@
-from apps import open_app
-from websites import open_website
+from apps import open_app, get_app_name
+from websites import open_website, get_website_name
 from folders import open_folder
-from data import websites
-from data import folders
+from data import websites, folders, website_commands, apps, app_commands
 import speech_recognition as sr
 import pyttsx3
 from datetime import datetime
@@ -52,17 +51,25 @@ with sr.Microphone() as source:
         elif "goodbye" in text:
             speak("See you later buddy.")
 
-        elif "open notepad" in text:
-            open_app("Notepad", "notepad")
+        elif any(text.startswith(cmd) for cmd in app_commands):
 
-        elif "open calculator" in text:
-            open_app("Calculator", "calc")
-        
-        elif "open paint" in text:
-            open_app("Paint", "mspaint")
-        
-        elif "open chrome" in text:
-            open_app("Google Chrome","chrome")
+            app = get_app_name(
+                text,
+                apps,
+                app_commands
+            )
+
+            print("App:", app)
+
+            if app in apps:
+                name, command = apps[app]
+
+                speak(f"Opening {name} buddy.")
+
+                open_app(name, command)
+
+            else:
+                speak("Sorry buddy, I don't know that application.")
 
         elif "what time is it" in text:
             current_time = datetime.now().strftime("%I:%M %p")
@@ -102,19 +109,17 @@ with sr.Microphone() as source:
             name, path = folders["rin folder"]
             open_folder(name, path)
 
-        elif text.startswith("open "):
-            website = text.replace("open ", "").strip()
+        elif any(text.startswith(cmd) for cmd in website_commands):
+            website = get_website_name(text, websites, website_commands)
 
-            print("Website name:", website)
+            print("Website:", website)
 
             if website in websites:
                 name, url = websites[website]
+                speak(f"Opening {name} buddy.")
                 open_website(name, url)
             else:
-                speak("Sorry buddy, I do not know that website.")
+                speak("Sorry buddy, I don't know that website.")
         
-        else:
-            speak("Sorry buddy, I do not know that command.")
-
     except:
         speak("Sorry buddy, I could not understand.")

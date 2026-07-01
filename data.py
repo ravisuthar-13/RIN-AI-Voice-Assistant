@@ -8,3 +8,28 @@ websites = {
 folders = {
     "rin folder": ("RIN", r"C:\Users\Ravi\OneDrive\Desktop\RIN")
 }
+
+website_commands = [
+    "open",
+    "launch",
+    "start",
+    "please open",
+    "can you open",
+    "open up"
+]
+
+apps = {
+    "calculator": ("Calculator", "calc"),
+    "notepad": ("Notepad", "notepad"),
+    "paint": ("Paint", "mspaint"),
+    "chrome": ("Chrome", "start chrome")
+}
+
+app_commands = [
+    "open",
+    "launch",
+    "start",
+    "please open",
+    "can you open",
+    "open up"
+]
