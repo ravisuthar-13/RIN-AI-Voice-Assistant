@@ -1,7 +1,7 @@
 from apps import open_app, get_app_name
 from websites import open_website, get_website_name
-from folders import open_folder
-from data import websites, folders, website_commands, apps, app_commands
+from folders import open_folder, get_folder_name
+from data import websites, folders, website_commands, apps, app_commands, folder_commands
 import speech_recognition as sr
 import pyttsx3
 from datetime import datetime
@@ -23,14 +23,16 @@ def speak(text):
 
 recognizer = sr.Recognizer()
 
-with sr.Microphone() as source:
-    print("Listening...")
+while True:
 
-    recognizer.adjust_for_ambient_noise(source, duration=1)
+    with sr.Microphone() as source:
+        print("Listening...")
 
-    audio = recognizer.listen(source)
+        recognizer.adjust_for_ambient_noise(source, duration=1)
 
-    print("Processing...")
+        audio = recognizer.listen(source)
+
+        print("Processing...")
 
     try:
         text = recognizer.recognize_google(audio, language="en-IN")
@@ -39,7 +41,11 @@ with sr.Microphone() as source:
 
         print("You said:", text)
 
-        if "hello buddy" in text or "hello bud" in text:
+        if "goodbye" in text or "good bye" in text or "stop rin" in text or "exit" in text:
+            speak("Goodbye buddy. RIN is going offline.")
+            break
+
+        elif "hello buddy" in text or "hello bud" in text:
             speak("Hello buddy. How can I help you?")
 
         elif "what is your name" in text:
@@ -50,26 +56,6 @@ with sr.Microphone() as source:
 
         elif "goodbye" in text:
             speak("See you later buddy.")
-
-        elif any(text.startswith(cmd) for cmd in app_commands):
-
-            app = get_app_name(
-                text,
-                apps,
-                app_commands
-            )
-
-            print("App:", app)
-
-            if app in apps:
-                name, command = apps[app]
-
-                speak(f"Opening {name} buddy.")
-
-                open_app(name, command)
-
-            else:
-                speak("Sorry buddy, I don't know that application.")
 
         elif "what time is it" in text:
             current_time = datetime.now().strftime("%I:%M %p")
@@ -105,21 +91,32 @@ with sr.Microphone() as source:
 
                 speak("Sorry buddy, Wikipedia is not responding right now.")
         
-        elif "open rin folder" in text:
-            name, path = folders["rin folder"]
-            open_folder(name, path)
+        elif any(text.startswith(cmd) for cmd in app_commands):
 
-        elif any(text.startswith(cmd) for cmd in website_commands):
-            website = get_website_name(text, websites, website_commands)
+            target = get_app_name(text, apps, app_commands)
 
-            print("Website:", website)
+            print("Target:", target)
 
-            if website in websites:
-                name, url = websites[website]
+            if target in folders:
+                name, path = folders[target]
+                speak(f"Opening {name} buddy.")
+                open_folder(name, path)
+
+            elif target in apps:
+                name, command = apps[target]
+                speak(f"Opening {name} buddy.")
+                open_app(name, command)
+
+            elif target in websites:
+                name, url = websites[target]
                 speak(f"Opening {name} buddy.")
                 open_website(name, url)
+
             else:
-                speak("Sorry buddy, I don't know that website.")
+                speak("Sorry buddy, I don't know that yet.")
         
+        else:
+            speak("Sorry buddy, I do not know that command.")
+
     except:
         speak("Sorry buddy, I could not understand.")
