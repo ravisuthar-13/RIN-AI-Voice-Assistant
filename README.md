@@ -41,6 +41,10 @@ Every version introduces new capabilities, making RIN smarter, more reliable, an
 
 This repository documents the complete development journey—from the very first voice response to future AI-powered automation.
 
+---
+
+# 🛠️ Tech Stack
+
 <p align="center">
   <img src="https://img.shields.io/badge/Python-3776AB?style=for-the-badge&logo=python&logoColor=white">
   <img src="https://img.shields.io/badge/SpeechRecognition-00C7B7?style=for-the-badge">
@@ -48,6 +52,8 @@ This repository documents the complete development journey—from the very first
   <img src="https://img.shields.io/badge/Wikipedia-000000?style=for-the-badge&logo=wikipedia&logoColor=white">
   <img src="https://img.shields.io/badge/Windows-Automation-0078D6?style=for-the-badge&logo=windows&logoColor=white">
 </p>
+
+---
 
 ### ⚡ RIN Capabilities
 
