@@ -2,14 +2,10 @@
   <img src="rin.png" width="220" alt="RIN AI Assistant">
 </p>
 
-<p align="center">
-  <img src="https://readme-typing-svg.herokuapp.com?font=Orbitron&weight=600&size=24&duration=3500&pause=1200&color=00D9FF&center=true&vCenter=true&width=950&lines=🤖+Personal+AI+Voice+Assistant;🐍+Built+with+Python;⚡+Voice+Automation+%7C+System+Monitor;💻+Desktop+Assistant" />
-</p>
-
 ---
 
 <p align="center">
-  <img src="https://readme-typing-svg.herokuapp.com?font=Orbitron&weight=600&size=24&duration=3500&pause=1200&color=00D9FF&center=true&vCenter=true&width=1000&lines=🤖+RIN+-+Personal+AI+Voice+Assistant;🐍+Built+with+Python;🎤+Voice+Recognition+%7C+Desktop+Automation;🧠+Learning+One+Version+at+a+Time" />
+  <img src="https://readme-typing-svg.herokuapp.com?font=Orbitron&weight=600&size=24&duration=3500&pause=1200&color=00D9FF&center=true&vCenter=true&width=950&lines=🤖+Personal+AI+Voice+Assistant;🐍+Built+with+Python;⚡+Voice+Automation+%7C+System+Monitor;💻+Desktop+Assistant" />
 </p>
 
 ---
