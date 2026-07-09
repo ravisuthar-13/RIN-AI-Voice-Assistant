@@ -40,3 +40,18 @@ The long-term vision of RIN is to become an intelligent desktop companion that c
 Every version introduces new capabilities, making RIN smarter, more reliable, and closer to a complete AI assistant.
 
 This repository documents the complete development journey—from the very first voice response to future AI-powered automation.
+
+<p align="center">
+  <img src="https://img.shields.io/badge/Python-3776AB?style=for-the-badge&logo=python&logoColor=white">
+  <img src="https://img.shields.io/badge/SpeechRecognition-00C7B7?style=for-the-badge">
+  <img src="https://img.shields.io/badge/pyttsx3-8A2BE2?style=for-the-badge">
+  <img src="https://img.shields.io/badge/Wikipedia-000000?style=for-the-badge&logo=wikipedia&logoColor=white">
+  <img src="https://img.shields.io/badge/Windows-Automation-0078D6?style=for-the-badge&logo=windows&logoColor=white">
+</p>
+
+### ⚡ RIN Capabilities
+
+![Voice](https://img.shields.io/badge/Voice%20Recognition-100%25-00D9FF?style=for-the-badge)
+![Automation](https://img.shields.io/badge/Desktop%20Automation-Active-00C853?style=for-the-badge)
+![System](https://img.shields.io/badge/System%20Monitor-v2.2-purple?style=for-the-badge)
+![Status](https://img.shields.io/badge/Project-Active-success?style=for-the-badge)
