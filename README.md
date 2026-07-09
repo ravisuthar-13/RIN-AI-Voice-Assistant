@@ -3,8 +3,10 @@
 </p>
 
 <p align="center">
-  <img src="https://readme-typing-svg.herokuapp.com?font=Orbitron&size=24&duration=3000&pause=1000&color=00D9FF&center=true&vCenter=true&width=700&lines=Personal+AI+Voice+Assistant;Built+with+Python;Voice+Automation+%7C+System+Monitor+%7C+Desktop+Assistant" />
+  <img src="https://readme-typing-svg.herokuapp.com?font=Orbitron&weight=600&size=24&duration=3500&pause=1200&color=00D9FF&center=true&vCenter=true&width=950&lines=🤖+Personal+AI+Voice+Assistant;🐍+Built+with+Python;⚡+Voice+Automation+%7C+System+Monitor;💻+Desktop+Assistant" />
 </p>
+
+---
 
 # 🤖 RIN - Personal AI Voice Assistant
 
