@@ -1,64 +1,31 @@
-# 🤖 RIN – Personal AI Voice Assistant
+# 🤖 RIN - Personal AI Voice Assistant
 
-## Overview
+> **A personal AI voice assistant built with Python.**
 
-RIN is a personal AI voice assistant developed using Python. It is designed to perform everyday tasks through voice commands while providing a foundation for future AI-powered automation.
+RIN is a long-term AI project that I am building from scratch to become a smart desktop assistant capable of understanding voice commands, automating daily tasks, and assisting with productivity.
 
-## Current Features
+---
 
-* 🎤 Voice Recognition
-* 🗣️ Text-to-Speech
-* 🕒 Current Time & Date
-* 📚 Wikipedia Search
-* 🖥️ Open Applications
-* 💬 Basic Conversation
-* ⚙️ Command-Based Execution
+## 🚀 Current Version
 
-## Technologies Used
+**RIN v2.2 – Smart System Monitor**
 
-* Python
-* SpeechRecognition
-* PyAudio
-* pyttsx3
-* Wikipedia
-* psutil
-* PyAutoGUI
+---
 
-## Project Structure
+## ✨ Current Features
 
-```text
-RIN-AI-Voice-Assistant/
-├── main.py
-├── requirements.txt
-└── README.md
-```
+- 🎤 Voice Recognition
+- 🗣️ Female AI Voice
+- 🔄 Continuous Listening
+- 💻 Open Desktop Applications
+- 🌐 Open Websites
+- 📂 Open Windows Folders
+- 📖 Wikipedia Search
+- 🕒 Current Time & Date
+- 🔋 Battery Monitoring
+- 🧠 CPU Usage
+- 💾 RAM Usage
+- 💿 Disk Usage
+- 🛑 Voice Shutdown Commands
 
-## Future Roadmap
-
-### Phase 2
-
-* Wake Word Detection
-* Continuous Listening
-* Better Command Recognition
-
-### Phase 3
-
-* Desktop Automation
-* File Management
-* Email & Calendar Support
-
-### Phase 4
-
-* AI Conversation
-* Long-Term Memory
-* Personalized Assistant
-
-### Phase 5
-
-* Animated Desktop Avatar
-* Voice Visualization
-* Complete Personal AI Assistant
-
-## Status
-
-🚧 Currently under active development.
+---
