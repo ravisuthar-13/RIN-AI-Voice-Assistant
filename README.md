@@ -1,5 +1,5 @@
 <p align="center">
-  <img src="assets/rin.png" width="220" alt="RIN AI Assistant">
+  <img src="rin.png" width="220" alt="RIN AI Assistant">
 </p>
 
 <p align="center">
