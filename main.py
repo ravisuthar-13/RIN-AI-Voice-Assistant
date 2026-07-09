@@ -4,22 +4,34 @@ from folders import open_folder, get_folder_name
 from data import websites, folders, website_commands, apps, app_commands, folder_commands
 import speech_recognition as sr
 import pyttsx3
+import time
 from datetime import datetime
 import wikipedia
+from system_info import (
+    get_battery_status,
+    get_cpu_usage,
+    get_ram_usage,
+    get_disk_usage
+)
 
-
-engine = pyttsx3.init()
-
-voices = engine.getProperty('voices')
-
-for voice in voices:
-    if "zira" in voice.name.lower():
-        engine.setProperty('voice', voice.id)
-        break
 
 def speak(text):
-    engine.say(text)
-    engine.runAndWait()
+    print("RIN:", text)
+
+    try:
+        engine = pyttsx3.init()
+
+        voices = engine.getProperty('voices')
+        for voice in voices:
+            if "zira" in voice.name.lower():
+                engine.setProperty('voice', voice.id)
+                break
+
+        engine.say(text)
+        engine.runAndWait()
+
+    except Exception as e:
+        print("TTS Error:", e)
 
 recognizer = sr.Recognizer()
 
@@ -54,9 +66,6 @@ while True:
         elif "how are you" in text or "how r u" in text:
             speak("I am doing great buddy.")
 
-        elif "goodbye" in text:
-            speak("See you later buddy.")
-
         elif "what time is it" in text:
             current_time = datetime.now().strftime("%I:%M %p")
             speak(f"The current time is {current_time} buddy.")
@@ -64,6 +73,18 @@ while True:
         elif "what is today's date" in text:
             current_date = datetime.now().strftime("%d %B %Y")
             speak(f"Today's date is {current_date} buddy.")
+        
+        elif "battery" in text or "charge" in text:
+            speak(get_battery_status())
+
+        elif "cpu" in text or "processor" in text:
+            speak(get_cpu_usage())
+
+        elif "ram" in text or "memory" in text:
+            speak(get_ram_usage())
+
+        elif "disk" in text or "storage" in text or "drive" in text or "space" in text or "usage" in text:
+            speak(get_disk_usage())
 
         elif "who is" in text or "what is" in text:
 
@@ -100,16 +121,19 @@ while True:
             if target in folders:
                 name, path = folders[target]
                 speak(f"Opening {name} buddy.")
+                time.sleep(0.5)
                 open_folder(name, path)
 
             elif target in apps:
                 name, command = apps[target]
                 speak(f"Opening {name} buddy.")
+                time.sleep(0.5)
                 open_app(name, command)
 
             elif target in websites:
                 name, url = websites[target]
                 speak(f"Opening {name} buddy.")
+                time.sleep(0.5)
                 open_website(name, url)
 
             else:
@@ -118,5 +142,13 @@ while True:
         else:
             speak("Sorry buddy, I do not know that command.")
 
-    except:
+    except sr.UnknownValueError:
         speak("Sorry buddy, I could not understand.")
+
+    except sr.RequestError as e:
+        print("Speech API Error:", e)
+        speak("Sorry buddy, my speech service is not responding.")
+
+    except Exception as e:
+        print("Main Error:", e)
+        speak("Sorry buddy, something went wrong.")

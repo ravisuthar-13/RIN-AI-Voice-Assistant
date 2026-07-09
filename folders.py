@@ -1,7 +1,7 @@
 import os
 
 def open_folder(name, path):
-    print(f"Opening {name} folder buddy.")
+    print(f"Opening {name} buddy.")
     os.startfile(path)
 
 def get_folder_name(text, folders, commands):
