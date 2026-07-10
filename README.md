@@ -1,20 +1,41 @@
 <p align="center">
-  <img src="rin.png" width="220" alt="RIN AI Assistant">
+  <img src="https://readme-typing-svg.herokuapp.com?font=Orbitron&weight=600&size=24&duration=3500&pause=1200&color=00D9FF&center=true&vCenter=true&width=950&lines=🤖+Personal+AI+Voice+Assistant;🐍+Built+with+Python;⚡+Voice+Automation+%7C+System+Monitor;🤖+Intelligent+Desktop+Assistant" />
 </p>
 
 ---
 
 <p align="center">
-  <img src="https://readme-typing-svg.herokuapp.com?font=Orbitron&weight=600&size=24&duration=3500&pause=1200&color=00D9FF&center=true&vCenter=true&width=950&lines=🤖+Personal+AI+Voice+Assistant;🐍+Built+with+Python;⚡+Voice+Automation+%7C+System+Monitor;💻+Desktop+Assistant" />
+  <img src="rin.png" width="100%">
 </p>
 
 ---
 
-# 🤖 RIN - Personal AI Voice Assistant
+<h1 align="center">
+🤖 RIN AI Voice Assistant
+</h1>
 
-> **A personal AI voice assistant built with Python.**
+<p align="center">
+An Intelligent Desktop Assistant built with Python
+</p>
 
 RIN is a long-term AI project that I am building from scratch to become a smart desktop assistant capable of understanding voice commands, automating daily tasks, and assisting with productivity.
+
+---
+
+## 📌 Project Summary
+
+| Feature | Details |
+|---------|---------|
+| 🤖 Project | Personal AI Voice Assistant |
+| 🐍 Language | Python |
+| 🎙️ Voice Recognition | Active |
+| 🔊 Text-to-Speech | Female AI Voice |
+| 🖥️ Desktop Automation | Active |
+| 📂 Apps & Folders | Supported |
+| 🌐 Website Commands | Supported |
+| 📊 System Monitoring | Battery, CPU, RAM & Disk |
+| 📦 Current Version | RIN v2.2 |
+| 🚀 Status | Active Development |
 
 ---
 
@@ -53,6 +74,44 @@ Every version introduces new capabilities, making RIN smarter, more reliable, an
 
 This repository documents the complete development journey—from the very first voice response to future AI-powered automation.
 
+
+---
+
+# 🔄 Project Workflow
+
+```text
+        🎙️ Voice Input
+              │
+              ▼
+   🗣️ Speech Recognition
+              │
+              ▼
+     🧠 Command Processing
+              │
+              ▼
+      ⚙️ Decision Engine
+              │
+ ┌────────────┼────────────┐
+ │            │            │
+ ▼            ▼            ▼
+📂 Apps    🌐 Websites   📁 Folders
+ │
+ ▼
+💻 System Monitoring
+ │
+ ▼
+🔊 AI Voice Response
+```
+
+### Workflow
+
+- 🎙️ Listen to the user's voice command
+- 🗣️ Convert speech into text
+- 🧠 Understand the command
+- ⚙️ Decide which module should handle it
+- 📂 Execute the requested task
+- 🔊 Respond with a natural AI voice
+
 ---
 
 # 🛠️ Tech Stack
@@ -73,3 +132,52 @@ This repository documents the complete development journey—from the very first
 ![Automation](https://img.shields.io/badge/Desktop%20Automation-Active-00C853?style=for-the-badge)
 ![System](https://img.shields.io/badge/System%20Monitor-v2.2-purple?style=for-the-badge)
 ![Status](https://img.shields.io/badge/Project-Active-success?style=for-the-badge)
+
+---
+
+# 📂 Project Structure
+
+```text
+RIN-AI-Voice-Assistant/
+│
+├── .gitignore
+├── LICENSE
+├── README.md
+├── apps.py
+├── data.py
+├── folders.py
+├── main.py
+├── requirements.txt
+├── rin.png
+├── system_info.py
+└── websites.py
+```
+
+---
+
+# 🚀 Future Roadmap
+
+- 🧠 Offline AI conversation
+- 🎙️ Custom wake word detection
+- 📅 Calendar & reminder management
+- 📧 Email automation
+- 🌦️ Weather forecasting
+- 🎵 Music & media control
+- 🤖 LLM integration (OpenAI / Local AI)
+- 🖥️ GUI desktop interface
+- 🔒 Voice authentication
+- ☁️ Cross-device synchronization
+
+---
+
+# 📈 Development Timeline
+
+| Version | Features |
+|---------|----------|
+| v1.0 | Voice Recognition |
+| v1.2 | Open Websites |
+| v1.4 | Open Applications |
+| v1.6 | Modular Architecture |
+| v2.0 | Continuous Listening |
+| v2.2 | Smart System Monitor |
+| 🚀 Future | AI Memory, LLM Integration, GUI |
