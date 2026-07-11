@@ -10,6 +10,28 @@
 
 ---
 
+<p align="center">
+
+<img src="https://img.shields.io/badge/Python-3776AB?style=for-the-badge&logo=python&logoColor=white"/>
+
+<img src="https://img.shields.io/badge/SpeechRecognition-00C7B7?style=for-the-badge"/>
+
+<img src="https://img.shields.io/badge/pyttsx3-8A2BE2?style=for-the-badge"/>
+
+<img src="https://img.shields.io/badge/Wikipedia-000000?style=for-the-badge&logo=wikipedia"/>
+
+<img src="https://img.shields.io/badge/Windows-0078D6?style=for-the-badge&logo=windows"/>
+
+<img src="https://img.shields.io/badge/Automation-00AEEF?style=for-the-badge"/>
+
+<img src="https://img.shields.io/badge/Open%20Source-success?style=for-the-badge"/>
+
+<img src="https://img.shields.io/badge/License-MIT-yellow?style=for-the-badge"/>
+
+</p>
+
+---
+
 <h1 align="center">
 🤖 RIN AI Voice Assistant
 </h1>
@@ -360,3 +382,11 @@ flowchart LR
 Current Version: v2.2
 
 Next Milestone: v3.0
+
+---
+<p align="center">
+⭐ If you like RIN,
+   consider giving this repository a Star!
+
+   Made with ❤️ by Ravi Suthar
+</p>
