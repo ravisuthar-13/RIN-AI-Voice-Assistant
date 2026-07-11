@@ -223,6 +223,136 @@ RIN-AI-Voice-Assistant/
 
 ---
 
+## 📈 RIN Development Journey
+
+```mermaid
+%%{init: {
+  "theme": "dark",
+  "flowchart": {
+    "nodeSpacing": 45,
+    "rankSpacing": 70,
+    "curve": "basis"
+  },
+  "themeVariables": {
+    "fontSize": "17px",
+    "primaryTextColor": "#FFFFFF",
+    "lineColor": "#00D9FF",
+    "background": "#0D1117"
+  }
+}}%%
+
+flowchart LR
+
+    %% =========================
+    %% Main Version Journey
+    %% =========================
+
+    V10["✅ v1.0<br/>🎤 Voice Recognition"]
+    V12["✅ v1.2<br/>🌐 Website Commands"]
+    V14["✅ v1.4<br/>💻 Application Control"]
+    V16["✅ v1.6<br/>🧩 Modular Architecture"]
+    V20["✅ v2.0<br/>🎧 Continuous Listening"]
+    V22["🚀 v2.2<br/>📊 Smart System Monitor"]
+    V30["🔮 v3.0<br/>🧠 AI Memory"]
+
+    V10 --> V12 --> V14 --> V16 --> V20 --> V22 --> V30
+
+    %% =========================
+    %% Website Branch
+    %% =========================
+
+    V12 --> WEB["🌐 Web Module"]
+
+    WEB --> LINKEDIN["LinkedIn"]
+    WEB --> YOUTUBE["YouTube"]
+    WEB --> GITHUB["GitHub"]
+    WEB --> PORTFOLIO["Portfolio"]
+    WEB --> GOOGLE["Google Search"]
+
+    %% =========================
+    %% Desktop Applications Branch
+    %% =========================
+
+    V14 --> APPS["💻 App Module"]
+
+    APPS --> NOTEPAD["Notepad"]
+    APPS --> CALCULATOR["Calculator"]
+    APPS --> CHROME["Chrome"]
+    APPS --> VSCODE["VS Code"]
+
+    %% =========================
+    %% System Monitor Branch
+    %% =========================
+
+    V22 --> MONITOR["📊 Monitor Module"]
+
+    MONITOR --> CPU["CPU Usage"]
+    MONITOR --> RAM["RAM Usage"]
+    MONITOR --> BATTERY["Battery Status"]
+    MONITOR --> DISK["Disk Usage"]
+
+    %% =========================
+    %% Future AI Branch
+    %% =========================
+
+    V30 --> AI["🧠 AI Module"]
+
+    AI --> MEMORY["Conversation Memory"]
+    AI --> LLM["Local / Cloud LLM"]
+    AI --> GUI["Desktop GUI"]
+    AI --> AUTH["Voice Authentication"]
+
+    %% =========================
+    %% Node Styles
+    %% =========================
+
+    classDef completed fill:#0E7490,stroke:#22D3EE,color:#FFFFFF,stroke-width:2px;
+    classDef current fill:#7C3AED,stroke:#C084FC,color:#FFFFFF,stroke-width:3px;
+    classDef future fill:#15803D,stroke:#4ADE80,color:#FFFFFF,stroke-width:2px;
+
+    classDef webModule fill:#1D4ED8,stroke:#60A5FA,color:#FFFFFF,stroke-width:2px;
+    classDef webItem fill:#172554,stroke:#3B82F6,color:#FFFFFF;
+
+    classDef appModule fill:#C2410C,stroke:#FB923C,color:#FFFFFF,stroke-width:2px;
+    classDef appItem fill:#431407,stroke:#F97316,color:#FFFFFF;
+
+    classDef monitorModule fill:#0F766E,stroke:#2DD4BF,color:#FFFFFF,stroke-width:2px;
+    classDef monitorItem fill:#134E4A,stroke:#14B8A6,color:#FFFFFF;
+
+    classDef aiModule fill:#6B21A8,stroke:#C084FC,color:#FFFFFF,stroke-width:2px;
+    classDef aiItem fill:#3B0764,stroke:#A855F7,color:#FFFFFF;
+
+    %% =========================
+    %% Apply Styles
+    %% =========================
+
+    class V10,V12,V14,V16,V20 completed;
+    class V22 current;
+    class V30 future;
+
+    class WEB webModule;
+    class LINKEDIN,YOUTUBE,GITHUB,PORTFOLIO,GOOGLE webItem;
+
+    class APPS appModule;
+    class NOTEPAD,CALCULATOR,CHROME,VSCODE appItem;
+
+    class MONITOR monitorModule;
+    class CPU,RAM,BATTERY,DISK monitorItem;
+
+    class AI aiModule;
+    class MEMORY,LLM,GUI,AUTH aiItem;
+
+    %% =========================
+    %% Colored Branch Lines
+    %% =========================
+
+    linkStyle 6,7,8,9,10,11 stroke:#3B82F6,stroke-width:2px;
+    linkStyle 12,13,14,15,16 stroke:#F97316,stroke-width:2px;
+    linkStyle 17,18,19,20,21 stroke:#14B8A6,stroke-width:2px;
+    linkStyle 22,23,24,25,26 stroke:#A855F7,stroke-width:2px;
+```
+---
+
 ## ⭐ Project Status
 
 🚀 Active Development
