@@ -216,6 +216,25 @@ RIN-AI-Voice-Assistant/
 
 ---
 
+## 🚧 Current Development Status
+
+> **RIN is currently under active development.**
+
+This repository documents the complete journey of building an AI-powered desktop assistant from scratch.
+
+⚠️ The installation guide and setup instructions will be added after the project reaches its first stable release (**v3.0**).
+
+Current focus:
+
+- 🚀 Improving desktop automation
+- 🧠 Expanding AI capabilities
+- 🎙️ Enhancing voice interaction
+- 🛠️ Building a stable architecture
+
+Thank you for following the RIN development journey! 💙
+
+---
+
 # 🚀 Future Roadmap
 
 - 🧠 Offline AI conversation
@@ -384,9 +403,11 @@ Current Version: v2.2
 Next Milestone: v3.0
 
 ---
-<p align="center">
-⭐ If you like RIN,
-   consider giving this repository a Star!
 
-   Made with ❤️ by Ravi Suthar
+<p align="center">
+⭐ If you found this project helpful, consider giving it a Star on GitHub!
+</p>
+
+<p align="center">
+Made with ❤️ by <b>Ravi Suthar</b>
 </p>
