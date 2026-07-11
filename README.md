@@ -32,6 +32,22 @@
 
 ---
 
+<p align="center">
+
+![Status](https://img.shields.io/badge/Status-Active_Development-blue)
+![Version](https://img.shields.io/badge/Version-v2.2-purple)
+![Release](https://img.shields.io/badge/Stable_Release-v3.0-success)
+
+
+</p>
+<p align="center">
+
+🚧 <b>EARLY DEVELOPMENT BUILD</b> • Version <b>v2.2</b> • ⭐ Stable Release Coming in <b>v3.0</b>
+
+</p>
+
+---
+
 <h1 align="center">
 🤖 RIN AI Voice Assistant
 </h1>
