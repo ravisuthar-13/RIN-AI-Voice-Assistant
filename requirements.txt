@@ -4,3 +4,6 @@ pyttsx3
 wikipedia
 pyautogui
 psutil
+pycaw
+screen-brightness-control
+audioop-lts

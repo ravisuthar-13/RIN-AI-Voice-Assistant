@@ -1,5 +1,62 @@
+# Python cache
 __pycache__/
-*.pyc
+*.py[cod]
+*.pyd
+
+# Virtual environments
+venv/
+env/
+.venv/
+
+# Environment variables and private configuration
 .env
+.env.*
+*.env
+secrets.json
+credentials.json
+private_config.py
+config_private.py
+
+# Editors
 .vscode/
 .idea/
+*.code-workspace
+
+# Operating system files
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# Logs and temporary files
+*.log
+logs/*
+!logs/.gitkeep
+*.tmp
+*.temp
+*.bak
+
+# Private/local user data
+user_data/
+personal_data/
+private/
+local_config/
+memory/
+sessions/
+
+# Audio test recordings
+recordings/
+voice_samples/
+microphone_tests/
+
+# Keep intentional sound assets
+!sounds/*.wav
+!sounds/*.mp3
+
+# Test and cache folders
+.pytest_cache/
+.cache/
+
+# Local databases
+*.db
+*.sqlite
+*.sqlite3
