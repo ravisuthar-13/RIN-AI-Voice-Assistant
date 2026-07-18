@@ -1,138 +1,309 @@
-# 📋 RIN Changelog
+# 📜 RIN Changelog
 
-All notable updates and major development milestones for **RIN — Personal AI Voice Assistant** are documented in this file.
+This document records every completed version of RIN.
 
-RIN is currently under active development.
+Only completed versions are added here.
 
----
-
-## 🚀 [v2.2] — Smart System Monitor
-
-### Added
-
-- Battery status monitoring
-- CPU usage monitoring
-- RAM usage monitoring
-- Disk usage monitoring
-- Voice-based system information commands
-- Improved system response handling
-
-### Project Structure
-
-- Added `system_info.py`
-- Updated `main.py`
-- Improved modular command handling
+Future versions are documented in `ROADMAP.md`.
 
 ---
 
-## ⚡ [v2.0] — Continuous Listening
+# 🟢 Version v2.5 (Latest)
 
-### Added
+**Release Status:** ✅ Completed
 
-- Continuous voice-listening mode
-- Improved speech-recognition loop
-- Automatic command processing
-- Reduced need to restart the program after every command
-- Better handling of unrecognized voice input
-
-### Improved
-
-- Voice interaction flow
-- Command-response experience
-- Assistant reliability
+**Phase:** Phase 2 — Windows Assistant
 
 ---
 
-## 🧩 [v1.8] — Smart Application Commands
+## 🎉 Highlights
 
-### Added
-
-- Improved desktop application commands
-- Better application-name recognition
-- Smarter command routing
-- Additional application support
-
-### Updated
-
-- `apps.py`
-- `main.py`
+- Completed Phase 2
+- Reorganized project architecture
+- Improved code maintainability
+- Professional GitHub repository structure
+- Documentation improvements
 
 ---
 
-## 🏗️ [v1.6] — Modular Architecture
+## ✨ New Features
 
-### Added
+### 🧱 Project Architecture
 
-- Separate application command module
-- Separate website command module
-- Separate folder command module
-- Cleaner and more maintainable project structure
+- Modular project structure
+- `commands.py`
+- `config.py`
+- `system_controls.py`
+- `data.py` cleanup
+- Dynamic project paths
 
-### New Modules
+### 📄 Documentation
 
-- `apps.py`
-- `websites.py`
-- `folders.py`
-
----
-
-## 🖥️ [v1.4] — Desktop Applications
-
-### Added
-
-- Open Notepad using voice commands
-- Open Calculator using voice commands
-- Open supported desktop applications
-- Basic desktop automation
+- README improvements
+- ROADMAP.md
+- PROJECT_STATUS.md
+- SECURITY.md
+- CONTRIBUTING.md
+- CODE_OF_CONDUCT.md
+- MIT LICENSE
+- requirements.txt
+- .gitignore
 
 ---
 
-## 🌐 [v1.2] — Website Commands
+## 🔧 Improvements
 
-### Added
-
-- Open websites using voice commands
-- YouTube support
-- Google search support
-- GitHub support
-- LinkedIn support
-- Portfolio support
+- Better folder organization
+- Cleaner Python modules
+- Easier future development
+- Better scalability
 
 ---
 
-## 🎙️ [v1.0] — Voice Recognition
+## 🐞 Bug Fixes
 
-### Added
-
-- Basic microphone input
-- Speech-to-text recognition
-- Female text-to-speech voice
-- Basic voice responses
-- Current time and date commands
-- Wikipedia question answering
+- General project cleanup
+- Documentation corrections
+- Repository organization
 
 ---
 
-## 🔮 Upcoming — v3.0
+---
 
-### Planned
+# 🟢 Version v2.4
 
-- AI conversation memory
-- Improved natural conversation
-- Better wake-word detection
-- Calendar and reminder support
-- Weather information
-- Email automation
-- LLM integration
-- Desktop GUI
-- Voice authentication
+**Release Status:** ✅ Completed
+
+**Phase:** Phase 2 — Windows Assistant
 
 ---
 
-<p align="center">
-  RIN is continuously evolving into a smarter and more capable AI desktop assistant.
-</p>
+## 🎉 Highlights
 
-<p align="center">
-  Made with ❤️ by <b>Ravi Suthar</b>
-</p>
+Media playback control.
+
+### ✨ Features
+
+- Play
+- Pause
+- Resume
+- Next Track
+- Previous Track
+- Stop Media
+
+---
+
+---
+
+# 🟢 Version v2.3
+
+**Release Status:** ✅ Completed
+
+**Phase:** Phase 2 — Windows Assistant
+
+---
+
+## 🎉 Highlights
+
+Brightness control added.
+
+### ✨ Features
+
+- Increase Brightness
+- Decrease Brightness
+- Set Brightness
+
+---
+
+---
+
+# 🟢 Version v2.2
+
+**Release Status:** ✅ Completed
+
+**Phase:** Phase 2 — Windows Assistant
+
+---
+
+## 🎉 Highlights
+
+Volume control system.
+
+### ✨ Features
+
+- Volume Up
+- Volume Down
+- Set Volume
+- Mute
+- Unmute
+
+---
+
+---
+
+# 🟢 Version v2.1
+
+**Release Status:** ✅ Completed
+
+**Phase:** Phase 2 — Windows Assistant
+
+---
+
+## 🎉 Highlights
+
+System monitoring.
+
+### ✨ Features
+
+- Battery
+- Charging Status
+- CPU Usage
+- RAM Usage
+- Disk Usage
+
+---
+
+---
+
+# 🟢 Version v2.0
+
+**Release Status:** ✅ Completed
+
+**Phase:** Phase 2 — Windows Assistant
+
+---
+
+## 🎉 Highlights
+
+Desktop integration.
+
+### ✨ Features
+
+- Website Launcher
+- Application Launcher
+- Folder Navigation
+- Wikipedia Commands
+
+---
+
+---
+
+# 🟢 Version v0.8
+
+Knowledge Assistant
+
+### Features
+
+- Wikipedia Search
+- Knowledge Responses
+
+---
+
+# 🟢 Version v0.7
+
+Time Improvements
+
+### Features
+
+- Better Time Commands
+- Natural Responses
+
+---
+
+# 🟢 Version v0.6
+
+Date & Time
+
+### Features
+
+- Current Time
+- Current Date
+
+---
+
+# 🟢 Version v0.5
+
+Windows Applications
+
+### Features
+
+- Notepad
+- Calculator
+- Chrome
+
+---
+
+# 🟢 Version v0.4
+
+Command Logic
+
+### Features
+
+- if / elif / else
+- Better Responses
+- Error Handling
+
+---
+
+# 🟢 Version v0.3
+
+Basic Conversation
+
+### Features
+
+- Greetings
+- AI Introduction
+- Unknown Commands
+
+---
+
+# 🟢 Version v0.2
+
+Speech Recognition
+
+### Features
+
+- Microphone Input
+- Speech Recognition
+- Wake Command
+
+---
+
+# 🟢 Version v0.1
+
+Voice Engine
+
+### Features
+
+- Text-to-Speech
+- Female Voice
+- Voice Configuration
+
+---
+
+# 📈 Version History
+
+| Version | Status | Phase |
+|---------|--------|-------|
+| v0.1 | ✅ | Phase 1 |
+| v0.2 | ✅ | Phase 1 |
+| v0.3 | ✅ | Phase 1 |
+| v0.4 | ✅ | Phase 1 |
+| v0.5 | ✅ | Phase 1 |
+| v0.6 | ✅ | Phase 1 |
+| v0.7 | ✅ | Phase 1 |
+| v0.8 | ✅ | Phase 1 |
+| v2.0 | ✅ | Phase 2 |
+| v2.1 | ✅ | Phase 2 |
+| v2.2 | ✅ | Phase 2 |
+| v2.3 | ✅ | Phase 2 |
+| v2.4 | ✅ | Phase 2 |
+| v2.5 | ✅ | Phase 2 |
+
+---
+
+# 🚀 Upcoming
+
+Future versions are **not recorded here**.
+
+See **ROADMAP.md** for planned development.
