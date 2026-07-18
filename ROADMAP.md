@@ -1164,6 +1164,168 @@ Start Next Version
 
 ---
 
+# 🧰 RIN Technology & Library Journey
+
+```mermaid
+%%{init: {
+  "theme": "dark",
+  "flowchart": {
+    "nodeSpacing": 40,
+    "rankSpacing": 70,
+    "curve": "basis"
+  },
+  "themeVariables": {
+    "fontSize": "14px",
+    "primaryTextColor": "#FFFFFF",
+    "lineColor": "#00D9FF",
+    "background": "#0D1117"
+  }
+}}%%
+
+flowchart LR
+
+%% =========================
+%% Phase Nodes
+%% =========================
+
+P1["🟢 Phase 1<br/>Foundation & Voice"]
+P2["🔵 Phase 2<br/>Windows Assistant"]
+P3["🟣 Phase 3<br/>Smart Assistant"]
+P4["🧠 Phase 4<br/>AI Intelligence"]
+P5["🤖 Phase 5<br/>Local AI"]
+P6["💻 Phase 6<br/>RIN Desktop"]
+P7["🚀 Phase 7<br/>RIN OS Foundation"]
+P8["🌐 Phase 8<br/>RIN Ecosystem"]
+
+P1 --> P2 --> P3 --> P4 --> P5 --> P6 --> P7 --> P8
+
+%% =========================
+%% Phase 1 Libraries
+%% =========================
+
+P1 --> T11["🐍 Python"]
+P1 --> T12["🗣️ pyttsx3"]
+P1 --> T13["🎙️ SpeechRecognition"]
+P1 --> T14["🎧 PyAudio"]
+P1 --> T15["📚 Wikipedia"]
+P1 --> T16["🕒 datetime"]
+P1 --> T17["⚙️ os / subprocess"]
+
+%% =========================
+%% Phase 2 Libraries
+%% =========================
+
+P2 --> T21["📊 psutil"]
+P2 --> T22["🖱️ PyAutoGUI"]
+P2 --> T23["🔉 pycaw"]
+P2 --> T24["🔆 screen-brightness-control"]
+P2 --> T25["🌐 webbrowser"]
+P2 --> T26["📁 pathlib"]
+P2 --> T27["🧩 Modular Python Architecture"]
+
+%% =========================
+%% Phase 3 Technologies
+%% =========================
+
+P3 --> T31["🔤 String Normalization"]
+P3 --> T32["🧾 Regular Expressions"]
+P3 --> T33["🗺️ Command Mapping"]
+P3 --> T34["📂 shutil"]
+P3 --> T35["🗑️ send2trash"]
+P3 --> T36["🌐 requests"]
+P3 --> T37["⏰ schedule"]
+P3 --> T38["📋 JSON Storage"]
+P3 --> T39["🔔 Windows Notifications"]
+
+%% =========================
+%% Phase 4 Technologies
+%% =========================
+
+P4 --> T41["🧠 Session Manager"]
+P4 --> T42["🗃️ SQLite"]
+P4 --> T43["📄 JSON Memory"]
+P4 --> T44["🔎 Memory Search"]
+P4 --> T45["👤 User Profile"]
+P4 --> T46["📈 Pattern Recognition"]
+
+%% =========================
+%% Phase 5 Technologies
+%% =========================
+
+P5 --> T51["🦙 Ollama"]
+P5 --> T52["🧠 Local LLMs"]
+P5 --> T53["📄 Document Parsing"]
+P5 --> T54["🧩 Prompt Templates"]
+P5 --> T55["🛠️ Tool Router"]
+P5 --> T56["🗺️ Task Planner"]
+P5 --> T57["🔐 Private Local Processing"]
+
+%% =========================
+%% Phase 6 Technologies
+%% =========================
+
+P6 --> T61["🪟 CustomTkinter"]
+P6 --> T62["💻 PySide6"]
+P6 --> T63["🎨 Character Assets"]
+P6 --> T64["🎞️ Animation System"]
+P6 --> T65["⚙️ Settings Manager"]
+P6 --> T66["📊 Desktop Widgets"]
+
+%% =========================
+%% Phase 7 Technologies
+%% =========================
+
+P7 --> T71["⚡ Automation Engine"]
+P7 --> T72["🕒 Task Scheduler"]
+P7 --> T73["🔔 Event Triggers"]
+P7 --> T74["🧩 Dynamic Imports"]
+P7 --> T75["📦 Plugin Registry"]
+P7 --> T76["🛡️ Permission System"]
+P7 --> T77["🧪 Testing Framework"]
+P7 --> T78["📝 Logging System"]
+
+%% =========================
+%% Phase 8 Technologies
+%% =========================
+
+P8 --> T81["🔗 Secure APIs"]
+P8 --> T82["📱 Mobile Integration"]
+P8 --> T83["🔄 Device Synchronization"]
+P8 --> T84["☁️ Optional Cloud Sync"]
+P8 --> T85["📦 Installer Builder"]
+P8 --> T86["⬆️ Update Manager"]
+P8 --> T87["🛒 Plugin Marketplace"]
+P8 --> T88["🌐 Community Platform"]
+
+%% =========================
+%% Styles
+%% =========================
+
+classDef completedPhase fill:#00A86B,stroke:#00E5A8,color:#FFFFFF,stroke-width:3px;
+classDef currentPhase fill:#7C3AED,stroke:#C084FC,color:#FFFFFF,stroke-width:3px;
+classDef futurePhase fill:#1F6FEB,stroke:#58A6FF,color:#FFFFFF,stroke-width:2px;
+
+classDef usedTech fill:#0E7490,stroke:#22D3EE,color:#FFFFFF,stroke-width:2px;
+classDef currentTech fill:#6D28D9,stroke:#C084FC,color:#FFFFFF,stroke-width:2px;
+classDef futureTech fill:#4C1D95,stroke:#A855F7,color:#FFFFFF,stroke-width:2px;
+
+class P1,P2 completedPhase;
+class P3 currentPhase;
+class P4,P5,P6,P7,P8 futurePhase;
+
+class T11,T12,T13,T14,T15,T16,T17 usedTech;
+class T21,T22,T23,T24,T25,T26,T27 usedTech;
+
+class T31,T32,T33,T34,T35,T36,T37,T38,T39 currentTech;
+
+class T41,T42,T43,T44,T45,T46 futureTech;
+class T51,T52,T53,T54,T55,T56,T57 futureTech;
+class T61,T62,T63,T64,T65,T66 futureTech;
+class T71,T72,T73,T74,T75,T76,T77,T78 futureTech;
+class T81,T82,T83,T84,T85,T86,T87,T88 futureTech;
+```
+---
+
 # 🚀 Long-Term Vision
 
 RIN is more than a voice assistant.
