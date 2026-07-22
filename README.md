@@ -36,17 +36,17 @@
 
   <img src="https://img.shields.io/badge/Status-Active%20Development-success?style=for-the-badge"/>
 
-  <img src="https://img.shields.io/badge/Latest%20Completed-v2.5-blue?style=for-the-badge"/>
+  <img src="https://img.shields.io/badge/Latest%20Completed-v3.0 Beta-blue?style=for-the-badge"/>
 
   <img src="https://img.shields.io/badge/Current%20Phase-Phase%203-blueviolet?style=for-the-badge"/>
 
-  <img src="https://img.shields.io/badge/Next%20Version-v3.0-orange?style=for-the-badge"/>
+  <img src="https://img.shields.io/badge/Next%20Version-v3.1-orange?style=for-the-badge"/>
 
 </p>
 
 <p align="center">
 
-🚀 **CURRENT DEVELOPMENT** • **Phase 3 — Smart Assistant** • **Next Version: v3.0**
+🚀 **CURRENT DEVELOPMENT** • **Phase 3 — Smart Assistant** • **Current Version: v3.0 Beta**
 
 ✅ **Phase 1 and Phase 2 Successfully Completed**
 
@@ -82,9 +82,25 @@ RIN is a long-term AI project that I am building from scratch to become a smart 
 | 🔆 Brightness Control | Supported |
 | 🎵 Media Control | Supported |
 | 🧱 Project Architecture | Modular |
-| ✅ Latest Completed Version | RIN v2.5 |
-| 🚀 Current Target | v3.0 — Smart Command Engine |
+| ✅ Latest Completed Version | RIN v3.0 Beta |
+| 🚀 Current Target | v3.1 Personal Memory System |
 | 📍 Status | Active Development |
+
+---
+
+## 📦 Version History
+
+| Version | Status | Highlights |
+|---------|--------|------------|
+| v1.x | ✅ Completed | Voice Assistant Prototype |
+| v2.0 | ✅ Completed | Windows Integration |
+| v2.1 | ✅ Completed | System Monitoring |
+| v2.2 | ✅ Completed | Volume Control |
+| v2.3 | ✅ Completed | Brightness Control |
+| v2.4 | ✅ Completed | Media Control |
+| v2.5 | ✅ Completed | Modular Project Structure |
+| **v3.0 Beta** | 🚀 Current | Smart Command Engine & Natural Language |
+| v3.1 | 🔄 Planned | Personal Memory System |
 
 ---
 
@@ -105,18 +121,18 @@ RIN has successfully completed **Phase 2**, which focused on Windows integration
 
 ### 🎯 Current Target
 
-## v3.0 — Smart Command Engine
+## v3.1 — Personal Memory System
 
 The next version will improve how RIN understands and processes commands.
 
 ### Planned Improvements
 
-- 🧠 Better command matching
-- 🔁 Command aliases
-- 💬 Flexible sentence recognition
-- ⚡ Faster command routing
-- ❓ Smarter unknown command handling
-- 🧹 Cleaner command parser
+- 🧠 BRemember personal information
+- 🔁 Save user preferences
+- 💬 Persistent memory
+- ⚡ Smart recall
+- ❓ Better intent understanding
+- 🧹 Foundation for AI conversation
 
 **Status:** 🚧 Ready to Begin
 
